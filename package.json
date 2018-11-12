@@ -1,0 +1,19 @@
+{
+  "name": "react-recycled-components",
+  "version": "1.0.0",
+  "description": "Lots of components you can reuse.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesbond00r/React-Recycled-Components.git"
+  },
+  "author": "Rob C",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesbond00r/React-Recycled-Components/issues"
+  },
+  "homepage": "https://github.com/jamesbond00r/React-Recycled-Components#readme"
+}
