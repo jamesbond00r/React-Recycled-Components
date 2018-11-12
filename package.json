@@ -3,8 +3,17 @@
   "version": "1.0.0",
   "description": "Lots of components you can reuse.",
   "main": "index.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --open",
+    "build": "SET NODE_ENV='production' && webpack",
+    "firebase-init": "firebase login && firebase init",
+    "deploy": "npm run build && firebase deploy"
   },
   "repository": {
     "type": "git",
@@ -12,6 +21,26 @@
   },
   "author": "Rob C",
   "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "query-string": "^6.2.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.0",
+    "css-loader": "^1.0.0",
+    "firebase-tools": "^6.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.6"
+  },
   "bugs": {
     "url": "https://github.com/jamesbond00r/React-Recycled-Components/issues"
   },
